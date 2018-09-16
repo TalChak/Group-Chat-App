@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">   
+        <link rel="stylesheet" link href="/css/style.css" type="text/css" media="screen" charset="utf-8">
+        <body>
+            
+            
+<div class="login-wrap">
+  <form action="" id="test-form">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="hide-fade delay-6">Welcome to Chat Room!<h2>Enter your Name</h2></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="input-name">
+          <input type="text" id="user-name" />
+          <label for="user-name">User Name</label>
+          <span class="bottom-border"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row login-footer">
+      <div class="col-7">
+        <br>
+        <a href="#" class="btn" onclick="setUserName()">ENTER</a>
+        
+        <br><br><br>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+           
+<div class="choose-icon-wrap">
+  <form action="" id="test-form">
+    <div class="row">
+      <div class="col-12">
+        <h1>Choose Your Profile Icon</h1>
+      </div>
+    </div>
+    
+    <div class="row choose-icon-footer">
+      <div class="col-7">
+       <div class="icons">
+         <a href="#"><img src="http://i67.tinypic.com/29qjj9z.jpg" border="0" alt="user-1" onclick="setUserIcon('http://i67.tinypic.com/29qjj9z.jpg')"></a>
+          <a href="#"><img src="http://i67.tinypic.com/ixf9n7.png" border="0" alt="user-2" onclick="setUserIcon('http://i67.tinypic.com/ixf9n7.png')"></a>
+          <a href="#"><img src="http://i67.tinypic.com/vfed0x.png" border="0" alt="user-3" onclick="setUserIcon('http://i67.tinypic.com/vfed0x.png')"></a>
+          <a href="#"><img src="http://i68.tinypic.com/2uo15c6.png" border="0" alt="user-4" onclick="setUserIcon('http://i68.tinypic.com/2uo15c6.png')"></a>
+          <a href="#"><img src="http://i67.tinypic.com/w1utty.png" border="0" alt="user-5" onclick="setUserIcon('http://i67.tinypic.com/w1utty.png')"></a>
+          <a href="#"><img src="http://i67.tinypic.com/121xsn7.png" border="0" alt="user-6" onclick="setUserIcon('http://i67.tinypic.com/121xsn7.png')"></a>
+          <a href="#"><img src="http://i66.tinypic.com/fdvles.png" border="0" alt="user-7" onclick="setUserIcon('http://i66.tinypic.com/fdvles.png')"></a>
+          <a href="#"><img src="http://i67.tinypic.com/14bnrsw.png" border="0" alt="user-8" onclick="setUserIcon('http://i67.tinypic.com/14bnrsw.png')"></a>
+          <a href="#"><img src="http://i67.tinypic.com/2a9borr.png" border="0" alt="user-9" onclick="setUserIcon('http://i67.tinypic.com/2a9borr.png')"></a>
+          <a href="#"><img src="http://i68.tinypic.com/2a9t8u8.png" border="0" alt="user-10" onclick="setUserIcon('http://i68.tinypic.com/2a9t8u8.png')"></a>
+         <a href="#"><img src="http://i66.tinypic.com/1z57jtg.png" border="0" alt="user-11" onclick="setUserIcon('http://i66.tinypic.com/1z57jtg.png')"></a>
+         <a href="#"><img src="http://i68.tinypic.com/2m5klzt.png" border="0" alt="user-12" onclick="setUserIcon('http://i68.tinypic.com/2m5klzt.png')"></a>
+         <a href="#"><img src="http://i68.tinypic.com/2ligbrr.png" border="0" alt="user-13" onclick="setUserIcon('http://i68.tinypic.com/2ligbrr.png')"></a>
+          <a href="#"><img src="http://i66.tinypic.com/2zj9y5l.jpg" border="0" alt="user-14" onclick="setUserIcon('http://i66.tinypic.com/2zj9y5l.jpg')"></a>
+           <a href="#"><img src="http://i66.tinypic.com/29mojzn.png" border="0" alt="user-15" onclick="setUserIcon('http://i66.tinypic.com/29mojzn.png')"></a>
+           <a href="#"><img src="http://i66.tinypic.com/w0qnio.png" border="0" alt="user-15" onclick="setUserIcon('http://i66.tinypic.com/w0qnio.png')"></a>
+           <br>
+         
+          <a><img src="http://i64.tinypic.com/30tm3d5.png" id="displayChosenIcon" border="0" alt="user-15"></a>
+           <br>
+            </div>
+            <br>
+        <a href="#" class="btn" onclick="enterChat()">Enter Chat</a>
+        
+        <br><br><br>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+
+ <span class="title">Chat Room Application</span> <br>
+ <span class="description">send messages to your online friends!</span>
+ <br>
+   <div class="container-main">
+       
+       <div class="contacts">
+       <br>
+               
+           <ul class="user-list">
+               <span class="dot-green"></span>
+               <span class="online-friends"> online friends</span>
+               <!--li><img class="message-image" src="http://i64.tinypic.com/30tm3d5.png" alt=""><div class="name-list"><span>Tal Chaklai</span></div></li-->
+ 
+           </ul>
+             <button class=clr-chat-btn onclick="clearChat()">Clear Chat</button>
+       </div>
+       
+       <div class="messages">
+         <!--img src="http://i67.tinypic.com/ixf9n7.png" alt="user">
+                   <div class="bubble">
+    <div class="txt">
+      <p class="name">Tal</p>
+      <p class="message">test test test test test test tbrgbekhgop egkopek gporekgoerpgkeo prgkp orekgepr ohth rthrt hest test test test</p>
+      <span class="timestamp">10:20 pm</span>
+    </div>
+    <div class="bubble-arrow"></div>
+  </div>
+                  
+                  <img id="img-alt" src="http://i67.tinypic.com/ixf9n7.png" alt="user">
+                   <div class="bubble alt-bubble">
+    <div class="txt">
+      <p class="name">Tal</p>
+      <p class="message">test test test test test test test test test test</p>
+      <span class="timestamp">10:20 pm</span>
+    </div>
+    <div class="bubble-arrow alt-arrow"></div>
+  </div-->
+     </div>
+                    
+                <div class="stack-wrap"></div>
+                <div class="typing_area">
+
+                            <div class="typing_area-inner">  
+                              <textarea class="myTextarea"></textarea>
+                                <button class="send-button" onclick="sendMessage()">send</button>
+                                <!--input type="submit" class="send-button" value="send"/-->
+                  
+                    </div>
+                </div>
+            </div>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="/js/chat.js"></script>
+                
+        </body>
+    </head>
+</html>
+
+
+
+
+
+      
